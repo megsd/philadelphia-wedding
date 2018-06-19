@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'pages#index'
+  get 'index', controller: 'pages'
+  get 'logan', controller: 'pages'
+  get 'museums', controller: 'pages'
+  get 'food', controller: 'pages'
+  get 'historic', controller: 'pages'
+  get 'outdoor', controller: 'pages'
+  get 'index', controller: 'pages'
+  get 'itinerary', controller: 'pages'
 end
