@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   def museums
   end
 
-  def food
+  def fairmount
   end
 
   def historic
