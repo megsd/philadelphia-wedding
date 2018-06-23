@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'index', controller: 'pages'
   get 'logan', controller: 'pages'
   get 'museums', controller: 'pages'
-  get 'food', controller: 'pages'
+  get 'fairmount', controller: 'pages'
   get 'historic', controller: 'pages'
   get 'outdoor', controller: 'pages'
   get 'index', controller: 'pages'
