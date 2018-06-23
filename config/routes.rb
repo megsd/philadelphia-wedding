@@ -1,11 +1,20 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   root 'pages#index'
-  get 'index', controller: 'pages'
-  get 'logan', controller: 'pages'
-  get 'museums', controller: 'pages'
-  get 'fairmount', controller: 'pages'
-  get 'historic', controller: 'pages'
-  get 'outdoor', controller: 'pages'
-  get 'index', controller: 'pages'
-  get 'itinerary', controller: 'pages'
+
+  resources :pages, only: %i[index] do
+    collection do
+      get 'schedule'
+    end
+  end
+
+  resources :locations, only: %i[index] do
+    collection do
+      get 'logan'
+      get 'museums'
+      get 'fairmount'
+      get 'historic'
+    end
+  end
 end
