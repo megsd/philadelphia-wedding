@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>PhiladelphiaWedding</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1" shrink-to-fit="no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,24 +11,21 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-      <%= link_to "Dave and Melissa's Wedding", root_path, class: 'navbar-brand' %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <%= link_to 'Locations', locations_path, class: 'nav-link' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Schedule', schedule_pages_path, class: 'nav-link' %>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar navbar-expand navbar-light bg-light border-bottom">
+      <%= link_to "Philly Wedding", root_path, class: 'navbar-brand' %>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <%= link_to 'Locations', locations_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Schedule', schedule_pages_path, class: 'nav-link' %>
+        </li>
+      </ul>
     </nav>
 
-    <%= yield %>
+    <main class="container-fluid">
+      <%= content_for?(:main) ? yield(:main) : yield %>
+    </main>
     <!-- footer -->
   </body>
 </html>
