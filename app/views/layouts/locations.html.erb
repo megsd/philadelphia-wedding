@@ -1,9 +1,5 @@
 <% content_for :main do %>
   <div class="row">
-    <button type="button" id="sidebarCollapse" class="btn btn-info">
-      <i class="fas fa-align-left"></i>
-      <span>Toggle Sidebar</span>
-    </button>
     <%= render partial: 'sidebar' %>
     <div class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
       <%= yield %>
