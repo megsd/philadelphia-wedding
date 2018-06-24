@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :locations, only: %i[index] do
+  resources :locations, only: [] do
     collection do
       get 'logan'
       get 'museums'
