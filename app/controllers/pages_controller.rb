@@ -1,22 +1,5 @@
+# frozen_string_literal: true
+
 class PagesController < ApplicationController
-  def index
-  end
-
-  def logan
-  end
-
-  def museums
-  end
-
-  def food
-  end
-
-  def historic
-  end
-
-  def outdoor
-  end
-
-  def itinerary
-  end
+  def index; end
 end
