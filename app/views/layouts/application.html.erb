@@ -30,6 +30,7 @@
       </ul>
     </nav>
 
+    <%= content_for?(:banner_img) ? yield(:banner_img) : nil %>
     <main class="container-fluid">
       <%= yield %>
     </main>
