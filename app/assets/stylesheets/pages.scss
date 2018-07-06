@@ -1,3 +1,66 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.banner-image {
+  padding: 75px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 42rem;
+  background-image: image-url("skyline.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: 'EB Garamond', serif !important;
+}
+
+// a {
+//   color: inherit !important;
+//   text-decoration: none !important;
+// }
+
+a:link {
+    color: inherit !important;
+    background-color: transparent;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+a:visited {
+    color: inherit !important;
+    background-color: transparent;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: gray !important;
+    background-color: transparent;
+    text-decoration: none !important;
+    // font-weight: bold !important;
+}
+
+a:active {
+    color: gray !important;
+    background-color: transparent;
+    text-decoration: none !important;
+    // font-weight: bold !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+// li:last-child {
+//   padding-bottom: 5rem;
+// }
