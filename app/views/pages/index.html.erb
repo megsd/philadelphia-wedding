@@ -1,17 +1,14 @@
-
-<body>
-
 <div class="row">
-  <h1 class="mx-auto text-center pb-2 class="font-weight-bold" style= "width: 800px"> Welcome to Philly!</h1>
+  <h1 class="mx-auto text-center pb-2 font-weight-bold main-header"> Welcome to Philly!</h1>
   <h3 class="mx-auto text-center pt-2 pb-5">Your Guide to Places of Interest</h3>
 </div>
 
 <div class="row">
   <div class="col-12 col-md-6 pb-5">
     <div class="card m-4">
-      <%= link_to image_tag 'thelogan.jpg', class: 'card-img-top' %>
+      <%= image_tag 'thelogan.jpg', class: 'card-img-top' %>
       <div class="card-body">
-        <h5 class="card-title"><%= link_to 'The Logan', logan_locations_path, class: 'card-title' %></h5>
+        <h5 class="card-title"><%= link_to 'The Logan', logan_locations_path, class: 'card-title muted' %></h5>
         <p class="card-text">The Logan Hotel is located in Center City on the
           Ben Franklin Parkway. It’s just outside the congested “grid” part of
           Center City, a bit greener and cleaner than the rest of Center City.</p>
@@ -21,9 +18,9 @@
 
   <div class="col-12 col-md-6 pb-5">
     <div class="card m-4">
-      <%= link_to image_tag 'parkway.jpg', class: 'card-img-top' %>
+      <%= image_tag 'parkway.jpg', class: 'card-img-top' %>
       <div class="card-body">
-        <h5 class="card-title"><%= link_to 'Benjamin Franklin Parkway', museums_locations_path, class: 'card-title' %></h5>
+        <h5 class="card-title"><%= link_to 'Benjamin Franklin Parkway', museums_locations_path, class: 'card-title muted' %></h5>
         <p class="card-text">The Parkway is where museums are located, and
           the route to Denison house for brunch on Sunday or
           Azalea Garden (for
@@ -36,7 +33,7 @@
 
   <div class="col-12 col-md-6">
     <div class="card m-4">
-      <%= link_to image_tag 'camden-county-boathouse-at-cooper-river-john-jack.jpg', class: 'card-img-top' %>
+      <%= image_tag 'camden-county-boathouse-at-cooper-river-john-jack.jpg', class: 'card-img-top' %>
       <div class="card-body">
         <h5 class="card-title"><%= link_to 'The Wedding', historic_locations_path, class: 'card-title' %></h5>
         <p class="card-text">Saturday, August 4th at 5:30pm</p>
@@ -46,13 +43,11 @@
 
   <div class="col-12 col-md-6">
     <div class="card m-4  ">
-      <%= link_to image_tag 'Yards.png', class: 'card-img-top' %>
+      <%= image_tag 'Yards.png', class: 'card-img-top' %>
       <div class="card-body">
-        <h5 class="card-title"><%= link_to 'Rehearsal Dinner', fairmount_locations_path, class: 'card-title' %></h5>
+        <h5 class="card-title"><%= link_to 'Rehearsal Dinner', fairmount_locations_path, class: 'card-title muted' %></h5>
         <p class="card-text">Friday 6:30pm at Yard's Brewing Co</p>
       </div>
     </div>
   </div>
-
 </div>
-</body>
