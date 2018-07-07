@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class LocationsController < ApplicationController
-  def fairmount; end
+  def rehearsal; end
 
-  def historic; end
+  def wedding; end
 
   def logan; end
 

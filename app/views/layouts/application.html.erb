@@ -16,13 +16,13 @@
       <%= link_to "Melissa and Dave", root_path, class: 'navbar-brand' %>
 
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown bold">
           <%= link_to 'Locations', "#", class: 'nav-link dropdown-toggle', id: "navbarDropdown", role: "button", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
           <div class="tr-l-50 dropdown-menu" aria-labelledby="navbarDropdown">
             <%= link_to 'The Logan', logan_locations_path, class: 'nav-link dropdown-item muted' %>
-            <%= link_to 'Rehearsal Dinner', fairmount_locations_path, class: 'nav-link dropdown-item muted' %>
-            <%= link_to 'Wedding', historic_locations_path, class: 'nav-link dropdown-item muted' %>
-            <%= link_to 'Parkway', museums_locations_path, class: 'nav-link dropdown-item muted' %>
+            <%= link_to 'Rehearsal Dinner', rehearsal_locations_path, class: 'nav-link dropdown-item muted' %>
+            <%= link_to 'Wedding', wedding_locations_path, class: 'nav-link dropdown-item muted' %>
+            <%= link_to 'Parkway', parkway_locations_path, class: 'nav-link dropdown-item muted' %>
           </div>
         </li>
       </ul>
