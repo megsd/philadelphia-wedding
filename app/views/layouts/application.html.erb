@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>PhiladelphiaWedding</title>
     <meta name="viewport" content="width=device-width" initial-scale="1" shrink-to-fit="no">
     <%= csrf_meta_tags %>
@@ -12,31 +12,21 @@
   </head>
 
   <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light border-bottom">
+    <nav class="navbar fixed-top navbar-expand navbar-light bg-light border-bottom">
       <%= link_to "Melissa and Dave", root_path, class: 'navbar-brand' %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse navbar-nav ml-auto" id="navBarDropdown">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item dropdown">
-            <%= link_to 'Locations', "#", class: 'nav-link dropdown-toggle', id: "navbarDropdown", role: "button", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to 'The Logan', logan_locations_path, class: 'nav-link dropdown-item' %>
-              <%= link_to 'Fairmount', fairmount_locations_path, class: 'nav-link dropdown-item' %>
-              <%= link_to 'Historic', historic_locations_path, class: 'nav-link dropdown-item' %>
-              <%= link_to 'Museums', museums_locations_path, class: 'nav-link dropdown-item' %>
-            </div>
-          </li>
 
-          <li class="nav-item">
-            <%= link_to 'Schedule', schedule_pages_path, class: 'nav-link' %>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item dropdown">
+          <%= link_to 'Locations', "#", class: 'nav-link dropdown-toggle', id: "navbarDropdown", role: "button", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
+          <div class="tr-l-50 dropdown-menu" aria-labelledby="navbarDropdown">
+            <%= link_to 'The Logan', logan_locations_path, class: 'nav-link dropdown-item' %>
+            <%= link_to 'Rehearsal Dinner', fairmount_locations_path, class: 'nav-link dropdown-item' %>
+            <%= link_to 'Wedding', historic_locations_path, class: 'nav-link dropdown-item' %>
+            <%= link_to 'Parkway', museums_locations_path, class: 'nav-link dropdown-item' %>
+          </div>
+        </li>
+      </ul>
+    </nav>m
 
     <%= content_for?(:banner_img) ? yield(:banner_img) : nil %>
     <main class="container">
