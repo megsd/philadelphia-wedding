@@ -8,10 +8,11 @@
     <div class="card m-4">
       <%= image_tag 'thelogan.jpg', class: 'card-img-top' %>
       <div class="card-body">
-        <h5 class="card-title"><%= link_to 'The Logan', logan_locations_path, class: 'card-title muted' %></h5>
+        <h5 class="card-title">The Logan Hotel</h5>
         <p class="card-text">The Logan Hotel is located in Center City on the
           Ben Franklin Parkway. It’s just outside the congested “grid” part of
           Center City, a bit greener and cleaner than the rest of Center City.</p>
+        <button type="button" class="btn btn-outline-warning mb-3"><%= link_to 'Go', logan_locations_path, class: 'card-title muted' %></button>
         </div>
       </div>
 </div>
@@ -20,12 +21,12 @@
     <div class="card m-4">
       <%= image_tag 'parkway.jpg', class: 'card-img-top' %>
       <div class="card-body">
-        <h5 class="card-title"><%= link_to 'Benjamin Franklin Parkway', parkway_locations_path, class: 'card-title muted' %></h5>
-        <p class="card-text">The Parkway is where museums are located, and
-          the route to Denison house for brunch on Sunday or
-          Azalea Garden (for
-          Molkkee game before lunch at Lloyd Hall on Saturday). It’s a nice, 20-min walk if not too hot.
-          </p>
+        <h5 class="card-title">The Benjamin Franklin Parkway</h5>
+        <p class="card-text">The Parkway is where museums are located. Also
+          route to Denison house for brunch on Sunday or
+          Azalea Garden/Lloyd Hall (for Molkkee game on Saturday). It’s a nice, 20-min walk.
+        </p>
+        <button type="button" class="btn btn-outline-warning mb-3"><%= link_to 'Go', parkway_locations_path, class: 'card-title muted' %></button>
       </div>
     </div>
   </div>
@@ -35,8 +36,9 @@
     <div class="card m-4  ">
       <%= image_tag 'Yards.png', class: 'card-img-top' %>
       <div class="card-body">
-        <h5 class="card-title"><%= link_to 'Rehearsal Dinner', rehearsal_locations_path, class: 'card-title muted' %></h5>
+        <h5 class="card-title">Rehearsal Dinner</h5>
         <p class="card-text">Friday 6:30pm at Yard's Brewing Co</p>
+        <button type="button" class="btn btn-outline-warning mb-3"><%= link_to 'Go', rehearsal_locations_path, class: 'card-title muted' %></button>
       </div>
     </div>
   </div>
@@ -45,8 +47,9 @@
     <div class="card m-4">
       <%= image_tag 'camden-county-boathouse-at-cooper-river-john-jack.jpg', class: 'card-img-top' %>
       <div class="card-body">
-        <h5 class="card-title"><%= link_to 'The Wedding', wedding_locations_path, class: 'card-title muted' %></h5>
+        <h5 class="card-title">The Wedding</h5>
         <p class="card-text">Saturday, August 4th at 5:30pm</p>
+        <button type="button" class="btn btn-outline-warning mb-3"><%= link_to 'Go', wedding_locations_path, class: 'card-title muted' %></button>
       </div>
     </div>
   </div>
