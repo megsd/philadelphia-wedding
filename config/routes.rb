@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :pages, only: %i[index] do
     collection do
       get 'schedule'
+      get 'map'
     end
   end
 
