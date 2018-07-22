@@ -62,7 +62,10 @@
       <div class="card-body">
         <h5 class="card-title">Map</h5>
         <p class="card-text">Quick overview of where everything is located</p>
-        <%= link_to 'Go', map_pages_path, class: 'btn btn-outline-warning mb-3' %>
+          <%= link_to '/phillymap7.pdf', class: 'btn btn-outline-warning mb-3', target: '_blank', rel: "noopener noreferrer" do %>
+            <%= "See Map" %>
+            <%= fa_icon "file-pdf-o" %>
+          <% end %>
       </div>
     </div>
   </div>
