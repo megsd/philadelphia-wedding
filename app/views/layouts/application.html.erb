@@ -9,7 +9,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <title>PhiladelphiaWedding</title>
+    <title><%= content_for?(:title) ? "Denison Wedding - #{yield(:title)}" : "Denison Wedding" %></title>
     <meta name="viewport" content="width=device-width" initial-scale="1" shrink-to-fit="no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -26,7 +26,7 @@
         <li class="nav-item dropdown bold">
           <%= link_to 'Locations', "#", class: 'nav-link dropdown-toggle', id: "navbarDropdown", role: "button", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
           <div class="tr-l-50 dropdown-menu" aria-labelledby="navbarDropdown">
-            <%= link_to 'The Logan', logan_locations_path, class: 'nav-link dropdown-item muted' %>
+            <%= link_to 'Hotels', hotels_locations_path, class: 'nav-link dropdown-item muted' %>
             <%= link_to 'Parkway', parkway_locations_path, class: 'nav-link dropdown-item muted' %>
             <%= link_to 'Rehearsal Dinner', rehearsal_locations_path, class: 'nav-link dropdown-item muted' %>
             <%= link_to 'Wedding', wedding_locations_path, class: 'nav-link dropdown-item muted' %>

@@ -5,7 +5,7 @@ class LocationsController < ApplicationController
 
   def wedding; end
 
-  def logan; end
+  def hotels; end
 
   def museums; end
 end

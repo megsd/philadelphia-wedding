@@ -1,3 +1,7 @@
+<% content_for :title do %>
+  Home
+<% end %>
+
 <div class="row">
   <h1 class="mx-auto text-center pb-2 font-weight-bold main-header"> Welcome to Philly!</h1>
   <h3 class="mx-auto text-center pt-2 pb-5">Your Guide to Places of Interest</h3>
@@ -13,7 +17,7 @@
           Ben Franklin Parkway. They're just outside the congested “grid” part of
           Center City, a bit greener and cleaner than the rest of Center City.
         </p>
-        <%= link_to 'Go', logan_locations_path, class: 'btn btn-outline-warning mb-3' %>
+        <%= link_to 'Go', hotels_locations_path, class: 'btn btn-outline-warning mb-3' %>
       </div>
     </div>
   </div>

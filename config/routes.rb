@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   resources :locations, only: [] do
     collection do
-      get 'logan'
+      get 'hotels'
       get 'parkway'
       get 'rehearsal'
       get 'wedding'
